@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+dev-dist/
+
+# Environment files (secrets - must not be committed to Git!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and Editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary build & dump files
+vite.config.js.timestamp-*
+diff.txt
+WhatsApp Image*
+fetch_inventory.js
+fetch_inventory.cjs
+rewriteTemplates.cjs
+inspectDb.cjs

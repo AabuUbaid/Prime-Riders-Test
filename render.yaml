@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: prime-rides-console
+    env: static
+    buildCommand: npm install && npm run build
+    publishDir: dist
+    headers:
+      - path: /*
+        headers:
+          - key: Cache-Control
+            value: public, max-age=31536000, immutable
+    routes:
+      - src: /*
+        dest: /index.html
